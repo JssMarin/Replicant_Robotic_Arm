@@ -1,0 +1,13 @@
+# Proteus_Simulator
+*.pdsbak
+*.workspace
+#*.pdsprj
+
+# Sublime_Text
+*.sublime-project
+*.sublime-workspace
+
+# CCS_Compiler
+*.hex
+
+# Other Files
