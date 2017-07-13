@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-////        Librería para controlar servomotores con PWM discreto      ////
+////      Librería para controlar servomotores con PWM discreto        ////
 ////                                                                   ////
 ////   *Nota: Este driver recurre a delay_us() para generar los pulsos ////
 ////          y hace uso exclusivamente del PUERTO (B) en adelante     ////
@@ -65,11 +65,8 @@
 ////   resolución del ADC.                                             ////
 ////                                                                   ////
 ///////////////////////////////////////////////////////////////////////////
-////                                                                   ////
-////  "El libre albedrio nos lleva a desarrollar cosas sorprendentes"  ////
 ////                       Jesús E. Marín L.                           ////
 ////                  Venezuela - Sucre - Cumaná                       ////
-////                                                                   ////
 ///////////////////////////////////////////////////////////////////////////
 
 #ifndef servo_h
@@ -106,6 +103,7 @@ long getc_adc(){
   for(int i = 0; i <= 10; i++){
     value_new = read_adc();
     result = result + value_new;
+    delay_ms(1);
   }
   return result/10;
 }
