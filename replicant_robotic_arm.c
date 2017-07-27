@@ -1,6 +1,6 @@
 #include <16F873A.h>
 #device  adc = 10
-#fuses   XT,NOWDT
+#fuses   XT
 #use     delay(clock = 4M)
 
 long     sensor_pulgar = 0;
