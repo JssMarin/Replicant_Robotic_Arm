@@ -13,7 +13,7 @@ void main(){
   set_tris_a(0x01);
   set_tris_b(0x00);
   setup_adc(adc_clock_internal);
-  setup_adc_ports(ALL_ANALOG);
+  setup_adc_ports(AN0);
   Servo_init(48); //Coloca a +-90° los servos declarados
 
   while(true){
